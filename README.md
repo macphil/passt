@@ -1,20 +1,21 @@
 # passt
-Proven applications, scripts, settings and tools 
 
-> **Note** 
-> 
-> **passt** means in german _fits_. 
+Proven applications, scripts, settings and tools
+
+> **Note**
+>
+> **passt** means in german _fits_.
 
 I collect here my proven applications, scripts, settings and tools, with which I have had good experiences in the past.
 This is of course a purely subjective list and serves mainly as a notepad for me.
 
 ## Visual Studio Code
+
 Open Source Sorcecode Esitor runs on Windows and Mac
-🔗: https://code.visualstudio.com/
-
-
+:link: https://code.visualstudio.com/
 
 ### Recommended Extensions
+
 - [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
   📸 Take beautiful screenshots of your code in VS Code!
 
@@ -51,4 +52,28 @@ Open Source Sorcecode Esitor runs on Windows and Mac
 
 - [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
-  
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+
+- [GitHub Markdown Preview](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview)
+
+## Windows terminal
+
+:link: [microsoft/terminal: The new Windows Terminal and the original Windows console host, all in the same place! (github.com)](https://github.com/microsoft/terminal)
+
+### Settings
+
+:construction:
+
+### Oh My Posh
+
+[Introduction | Oh My Posh](https://ohmyposh.dev/docs/)
+
+`❯ code $profile` will open the powershell profile file
+
+```powershell
+oh-my-posh init pwsh --config C:\git\github\macphil\passt\macphil.omp.json | Invoke-Expression
+```
+
+## other tools without further plugins _no strings attached_
+
+- [Typora — a markdown editor, markdown reader.](https://typora.io/)

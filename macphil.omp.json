@@ -1,0 +1,159 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+        {
+            "alignment": "left",
+            "segments": [
+                {
+                    "background": "blue",
+                    "foreground": "white",
+                    "properties": {
+                        "folder_icon": "",
+                        "folder_separator_icon": "  ",
+                        "max_depth": 2,
+                        "hide_root_location": false,
+                        "style": "agnoster_short",
+                        "mapped_locations": {
+                            "C:\\git\\github": "",
+                            "c:\\git": ""
+                        }
+                    },
+                    "style": "diamond",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "template": " {{ .Path }} ",
+                    "type": "path"
+                },
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "foreground": "#000",
+                    "template": " "
+                },
+                {
+                    "background": "#00ff0d",
+                    "background_templates": [
+                        "{{ if or (.Working.Changed) (.Staging.Changed) }}#fffb00{{ end }}",
+                        "{{ if gt .Ahead 0 }}#b30000{{ end }}",
+                        "{{ if gt .Behind 0 }}#f00{{ end }}"
+                    ],
+                    "foreground": "#000000",
+                    "powerline_symbol": "",
+                    "properties": {
+                        "branch_max_length": 30,
+                        "fetch_stash_count": false,
+                        "fetch_status": true,
+                        "fetch_upstream_icon": true
+                    },
+                    "style": "powerline",
+                    "template": " {{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }}   ({{ .Working.String }}){{ end }}{{ if and .Working.Changed .Staging.Changed }}  {{ end }}{{ if .Staging.Changed }}{{ if not .Working.Changed }}  {{ end }} ({{ .Staging.String }}){{ end }}{{ if .StashCount }}   {{ .StashCount }} Stash{{ if gt .StashCount 1 }}es{{ end }}{{ end }} ",
+                    "type": "git"
+                },
+                {
+                    "background": "#ff8080",
+                    "foreground": "#ffffff",
+                    "powerline_symbol": "",
+                    "style": "powerline",
+                    "template": " {{ if gt .Code 0 }} {{ .Meaning }}{{ else }}{{ end }} ",
+                    "type": "exit"
+                }
+            ],
+            "type": "prompt"
+        },
+        {
+            "alignment": "right",
+            "segments": [
+                {
+                    "type": "shell",
+                    "style": "diamond",
+                    "powerline_symbol": "",
+                    "leading_diamond": "",
+                    "invert_powerline": true,
+                    "foreground": "#ffffff",
+                    "background": "#0077c2",
+                    "properties": {
+                        "mapped_shell_names": {
+                            "pwsh": "PS"
+                        }
+                    },
+                    "template": "<#0077c2,transparent></>  {{ .Name }} {{ .Version }} "
+                },
+                {
+                    "background": "#ffeb3b",
+                    "background_templates": [
+                        "{{ if .Error }}p:c-battery-state-error{{ end }}",
+                        "{{ if lt .Percentage 15 }}p:c-battery-15-less{{ end }}",
+                        "{{ if and (gt .Percentage 16) (lt .Percentage 30) }}p:c-battery-30-less{{ end }}",
+                        "{{ if and (gt .Percentage 31) (lt .Percentage 45) }}p:c-battery-45-less{{ end }}",
+                        "{{ if and (gt .Percentage 46) (lt .Percentage 55) }}p:c-battery-55-less{{ end }}",
+                        "{{ if and (gt .Percentage 56) (lt .Percentage 70) }}p:c-battery-70-less{{ end }}",
+                        "{{ if and (gt .Percentage 71) (lt .Percentage 90) }}p:c-battery-90-less{{ end }}",
+                        "{{ if and (gt .Percentage 91) (le .Percentage 100) }}p:c-battery-100-less{{ end }}"
+                    ],
+                    "foreground": "#193549",
+                    "properties": {
+                        "charged_icon": " ",
+                        "charging_icon": " ",
+                        "discharging_icon": "ﮤ "
+                    },
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": true,
+                    "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }} ",
+                    "type": "battery"
+                },
+                {
+                    "background": "#2e9599",
+                    "foreground": "#111111",
+                    "style": "diamond",
+                    "invert_powerline": true,
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "template": " {{ .CurrentDate | date .Format }} ",
+                    "type": "time"
+                }
+            ],
+            "type": "prompt"
+        },
+        {
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "background": "#ff0000",
+                    "foreground": "#111111",
+                    "style": "diamond",
+                    "trailing_diamond": "",                    
+                    "template": "  admin ",
+                    "type": "root"
+                },
+                {
+                    "properties": {
+                        "hide_root_location": true,
+                        "style": "folder"
+                    },
+                    "style": "plain",
+                    "template": " {{ .Path }} ",
+                    "type": "path"
+                },
+                {
+                    "foreground": "white",
+                    "style": "plain",
+                    "template": "❯ ",
+                    "type": "text"
+                }
+            ],
+            "type": "prompt"
+        }
+    ],
+    "palette": {
+        "c-battery-15-less": "#FF8A80",
+        "c-battery-30-less": "#FFD180",
+        "c-battery-45-less": "#FFE57F",
+        "c-battery-55-less": "#FFFF8D",
+        "c-battery-70-less": "#F4FF81",
+        "c-battery-90-less": "#B9F6CA",
+        "c-battery-100-less": "#CCFF90"
+    },
+    "version": 2
+}
