@@ -85,7 +85,7 @@ public void GetAdditionalInformation_FilledOriginalResponse_ReturnsMappedRespons
 
 ### mehrere Assertions in einem Test
 
-Wenn mehrere Assertions in einem TestCase vorhanden sind, wird nach dem ersten fehlgeschlagenen Assert der Test beendet (Ausnahme: https://github.com/nunit/docs/wiki/Multiple-Asserts). Daher ist die Reihenfolge wichtig. (siehe weiter unten)
+Wenn mehrere Assertions in einem TestCase vorhanden sind, wird nach dem ersten fehlgeschlagenen Assert der Test beendet (Ausnahme: <https://github.com/nunit/docs/wiki/Multiple-Asserts>). Daher ist die Reihenfolge wichtig. (siehe weiter unten)
 
 ## parametrisierte Tests
 
@@ -116,7 +116,7 @@ public class SomeNUnitTests
 - Grenzwerte leicht abprüfbar
 - wenn kein `TestName` angegeben wurde, werden im TestExplorer die konkreten Werte angezeigt:
 
-![SomeNUnitTests](.\images\SomeNUnitTests.png)
+![SomeNUnitTests](./images/SomeNUnitTests.png)
 
 > Verwendung von TestName
 >
@@ -128,7 +128,7 @@ Parametrisierte Tests per TestCase() funktionieren nur mit primitiven Typen.
 
 Wenn komplexere Objekte für die Tests benötigt werden, müssen diese als Enumeration von [TestCaseData](https://github.com/nunit/docs/wiki/TestCaseData) bereitgestellt werden:
 
-![TestCaseSourceFirstTest](C:\git\github\macphil\passt\images\TestCaseSourceFirstTest.png)
+![TestCaseSourceFirstTest](./images/TestCaseSourceFirstTest.png)
 
 ```c#
 using System.Collections.Generic;
@@ -250,7 +250,7 @@ Beispiele:
 - `Assert.That(null, Is.Null);`
 - `Assert.That("Make it right", Does.StartWith("Make"));`
 
- Mehr vom Hersteller unter https://github.com/nunit/docs/wiki/Constraints
+ Mehr vom Hersteller unter <https://github.com/nunit/docs/wiki/Constraints>
 
  ```c#
  //-- einfach, aber eigentlich nicht dass, was geprüft werden soll
