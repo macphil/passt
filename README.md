@@ -76,4 +76,8 @@ oh-my-posh init pwsh --config C:\git\github\macphil\passt\macphil.omp.json | Inv
 
 ## other tools without further plugins _no strings attached_
 
+Prefer installing it via `choco install <name>`
+
 - [Typora — a markdown editor, markdown reader.](https://typora.io/)
+
+- [TreeSize Free | JAM Software (jam-software.com)](https://www.jam-software.com/treesize_free)
