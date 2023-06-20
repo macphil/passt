@@ -9,10 +9,6 @@ it is not easy to recognize Unicode characters via script, as they are technical
 
 Replacements done by [unicode-Substitutions - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=GlenBuktenica.unicode-substitutions)
 
-| **Character Name** | **Character** | **Unicode** | **Replace with** | **Character** | **Replace with Unicode** |
-| :----------------- | :------------ | :---------- | :--------------- | :------------ | :----------------------- |
-|                    |               |             |                  |               |                          |
-
 | **Character Name**             | **Character** | **Unicode** | **Replace with**    | **Character** | **Replace with Unicode** |
 | :----------------------------- | :------------ | :---------- | :------------------ | :------------ | :----------------------- |
 | En Dash                        | –             | 2013        | Hyphen              | -             | 002D                     |
