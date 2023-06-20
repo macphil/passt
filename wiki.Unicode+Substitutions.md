@@ -31,6 +31,5 @@ Other Unicodes which may occur and then have to be replaced manually:
 
 | **Character Name**         | **Unicode**                                   | **Replace** |
 | :------------------------- | :-------------------------------------------- | :---------- |
-| Zero Width Space           | [ U+200B](https://unicode-table.com/en/200B/) |  ![image](https://github.com/macphil/passt/assets/7562031/77ec16f6-4e17-44fd-ac26-fd5b4a046062)
-           |
+| Zero Width Space           | [ U+200B](https://unicode-table.com/en/200B/) |  ![image](https://github.com/macphil/passt/assets/7562031/77ec16f6-4e17-44fd-ac26-fd5b4a046062)|
 | registered trade mark sign | [U+00AE](https://unicode-table.com/en/00AE/)  | `&reg;`     |
