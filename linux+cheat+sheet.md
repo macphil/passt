@@ -5,7 +5,7 @@ The following commands are in no order or context. They are more a collection of
 
 *show running services managed by `systemctl`*
 ```bash
-$ sudo systemctl --type=service --state=running
+sudo systemctl --type=service --state=running
 ```
 *grep in gzip*
 ```bash
