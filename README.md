@@ -81,3 +81,9 @@ Prefer installing it via `choco install <name>`
 - [Typora — a markdown editor, markdown reader.](https://typora.io/)
 
 - [TreeSize Free | JAM Software (jam-software.com)](https://www.jam-software.com/treesize_free)
+
+## ssh & co
+generate new keypair:
+```bash
+ssh-keygen -f ~/.ssh/<purpose>.ed25519 -t ed25519
+```
