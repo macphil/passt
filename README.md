@@ -87,3 +87,7 @@ generate new keypair:
 ```bash
 ssh-keygen -f ~/.ssh/<purpose>.ed25519 -t ed25519
 ```
+copy public key to `known_host`:
+```
+ssh-copy-id -i ~/.ssh/<purpose>.ed25519 user@host
+```
