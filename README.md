@@ -85,9 +85,24 @@ Prefer installing it via `choco install <name>`
 ## ssh & co
 generate new keypair:
 ```bash
-ssh-keygen -f ~/.ssh/<purpose>.ed25519 -t ed25519
+ssh-keygen -f ~/.ssh/<nickame>.ed25519 -t ed25519
 ```
-copy public key to `known_host`:
+copy public key to `known_host` at nickname:
 ```
-ssh-copy-id -i ~/.ssh/<purpose>.ed25519 user@host
+ssh-copy-id -i ~/.ssh/<nickame>.ed25519 user@fqdn.foo.bar.com
 ```
+
+`.ssh/config`:
+```txt
+Host <nickame>
+HostName fqdn.foo.bar.com
+Port 123456
+User username
+IdentityFile  ~/.ssh/<nickame>.ed25519
+```
+
+links: 
+- <https://www.ssh.com/academy/ssh/keygen>
+- <https://www.ssh.com/academy/ssh/copy-id>
+- <https://www.ssh.com/academy/ssh/config#listing-of-client-configuration-options>
+
