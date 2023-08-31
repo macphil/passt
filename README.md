@@ -85,7 +85,7 @@ Prefer installing it via `choco install <name>`
 ## ssh & co
 generate new keypair:
 ```bash
-ssh-keygen -f ~/.ssh/<nickame>.ed25519 -t ed25519
+ssh-keygen -f ~/.ssh/<nickame>.ed25519 -t ed25519 -C <comment>
 ```
 copy public key to `known_host` at nickname:
 ```
