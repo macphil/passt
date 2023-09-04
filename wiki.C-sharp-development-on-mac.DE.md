@@ -17,7 +17,7 @@ Englischsprachige Nutzer haben jedoch einen Wissensvorsprung:
 
 Der Link führt auf [What's happening to Visual Studio for Mac?](https://learn.microsoft.com/en-us/visualstudio/mac/what-happened-to-vs-for-mac?view=vsmac-2022)
 
-Dort wird dann erklärt, dass Microsoft den Editor nicht mehr weiterentwickelt wird und nach dem 31.08.2024 auch nicht mehr verfügbar ist.:
+Dort wird dann erklärt, dass Microsoft den Editor nicht mehr weiterentwickelt wird und nach dem 31.08.2024 auch nicht mehr verfügbar ist:
 
 > **On or before Aug 31, 2024**
 >
@@ -31,7 +31,7 @@ Als Alternative wird auf [Visual Studio Code](https://code.visualstudio.com/docs
 
 ## VS Code & C# Dev Kit
 
-Der open-source editor VS Code von Microsoft ist meiner Meinung nach wirklich gut gelungen und wird von mir selbst auf dem mac seit Jahren als zentrale Entwicklungsumgebung genutzt.
+Der freie open source Editor VS Code von Microsoft ist meiner Meinung nach wirklich gut gelungen und wird von mir selbst auf dem mac seit Jahren als zentrale Entwicklungsumgebung genutzt.
 
 Jedoch bin ich bisher nicht auf die Idee gekommen, diesen zur C#-Entwicklung zu nutzen, da die bisherigen Erweiterungen dafür eher schlecht als recht funktionieren.
 
@@ -41,6 +41,9 @@ Folgende Schritte sind Notwendig:
 
 1. [installieren von VS Code](https://code.visualstudio.com/)
 2. [installieren des .NET 7.0 SDK für Visual Studio Code](https://dotnet.microsoft.com/en-us/download/dotnet/sdk-for-vs-code?utm_source=vs-code&utm_medium=referral&utm_campaign=sdk-install)
+   Prüfen, ob alles korrekt installiert ist - Ich habe 6 & 7 Installiert, es genügt aber eine Version:
+   ![dotnet-list](images/dotnet-list.png)
+
 3. [installieren der Erweiterung C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 
 ## Hello VSCode
@@ -48,7 +51,7 @@ Folgende Schritte sind Notwendig:
 1. Erstellen eines leeren Ordners und Öffnen in VSCode:
    ![HelloVSCode_1](images/HelloVSCode_1.png)
 
-2. Command Palette (⇧⌘P oder F1): `.NET: New Project`
+2. Command Palette (⇧⌘P oder F1): `.NET: New Project…`
    ![HelloVSCode_2](images/HelloVSCode_2.png)
 
 3. Command Palette: `Console App`
