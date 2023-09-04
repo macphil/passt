@@ -2,7 +2,7 @@
 
 Wenn man mit der Entwicklung von C# (oder eine andere .NET - Sprache) anfangen möchte, ist meiner Meinung nach die beste Kombination Windows & Visual Studio.
 
-Falls nun aus welchen Gründen auch immer kein Windows-System zur Verügung steht, ist dies seit einiger Zeit auch kein KO-Kriterium mehr, da seit .NET core die Entwicklung nicht mehr an Windows gebunden ist. Es gibt weiterhin Dinge, die nur unter Windows funktionieren, aber dass kann an dieser Stelle ignoriert werden.
+Falls nun aus welchen Gründen auch immer kein Windows-System zur Verfügung steht, ist dies seit einiger Zeit auch kein KO-Kriterium mehr, da seit .NET core die Entwicklung nicht mehr an Windows gebunden ist. Es gibt weiterhin Dinge, die nur unter Windows funktionieren, aber dass kann an dieser Stelle ignoriert werden.
 
 ## Visual Studio für Mac
 
@@ -37,7 +37,7 @@ Jedoch bin ich bisher nicht auf die Idee gekommen, diesen zur C#-Entwicklung zu 
 
 Das ist nun mit [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) anders geworden.
 
-Folgende Schitte sind Notwendig:
+Folgende Schritte sind Notwendig:
 
 1. [installieren von VS Code](https://code.visualstudio.com/)
 2. [installieren des .NET 7.0 SDK für Visual Studio Code](https://dotnet.microsoft.com/en-us/download/dotnet/sdk-for-vs-code?utm_source=vs-code&utm_medium=referral&utm_campaign=sdk-install)
@@ -61,15 +61,15 @@ Folgende Schitte sind Notwendig:
 5. Ausführen
    ![HelloVsCode_run](images/HelloVSCode_run.png)
 
-6. CodeLense (einer andenen Solution)
+6. CodeLense (einer anderen Solution)
    ![HelloVSCode_6](images/HelloVSCode_6.png)
 
-7. Debug (einer andenen Solution)
+7. Debug (einer anderen Solution)
    ![HelloVSCode_7](images/HelloVSCode_7.png)
 
 ## Fazit
 
-Nach dem ersten Blick auf diese Kombination bin ich als langjähriger Nutzer von Visual Studio unter Windows beeindruckt: Codelense, Debugging, IntelliSense und Testing funktionieren. Einzig die UI ist nicht so überfrachtet wie die von Visual Studio (Windows), was aber gerade für den Anfang garnicht so schlecht ist. Das Kontextmenü bzw die Command Palette übernehmen nun die Aufgabe zu allen relevanten Punkten.
+Nach dem ersten Blick auf diese Kombination bin ich als langjähriger Nutzer von Visual Studio unter Windows beeindruckt: Codelense, Debugging, IntelliSense und Testing funktionieren. Einzig die UI ist nicht so überfrachtet wie die von Visual Studio (Windows), was aber gerade für den Anfang gar nicht so schlecht ist. Das Kontextmenü bzw die Command Palette übernehmen nun die Aufgabe zu allen relevanten Punkten.
 
 Auf jeden Fall besser als Visual Studio für Mac, dem ich somit keine Träne nachweinen werde.
 
