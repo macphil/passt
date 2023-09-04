@@ -66,7 +66,7 @@ Folgende Schitte sind Notwendig:
 
 5. Ausführen
 
-   ![HelloVsCode_run](/Users/macphil/git/github/macphil/passt/images/HelloVsCode_run.png)
+   ![HelloVsCode_run](images/HelloVsCode_run.png)
 
 
 
