@@ -1,12 +1,14 @@
-# C# Entwicklung auf einem mac
+# C# Entwicklung auf einem Mac
 
-Wenn man mit der Entwicklung von C# (oder eine andere .NET - Sprache) anfangen möchte, ist meiner Meinung nach die beste Kombination Windows & Visual Studio.
+Wenn man mit der Entwicklung von C# (oder einer anderen .NET - Sprache) anfangen möchte, ist meiner Meinung nach die beste Kombination Windows & Visual Studio.
 
-Falls nun aus welchen Gründen auch immer kein Windows-System zur Verfügung steht, ist dies seit einiger Zeit auch kein KO-Kriterium mehr, da seit .NET core die Entwicklung nicht mehr an Windows gebunden ist. Es gibt weiterhin Dinge, die nur unter Windows funktionieren, aber dass kann an dieser Stelle ignoriert werden.
+Falls nun - aus welchen Gründen auch immer - kein Windows-System zur Verfügung steht, ist dies mittlerweile kein KO-Kriterium mehr, da seit .NET core die Entwicklung nicht mehr an Windows gebunden ist. 
+
+Es gibt zwar weiterhin Dinge, die nur unter Windows funktionieren, aber dass kann an dieser Stelle ignoriert werden.
 
 ## Visual Studio für Mac
 
-Für mac bietet Microsoft zum Entwickeln Visual Studio für Mac an: <img src="images/vsmac_de.png" alt="vsmac_de%50" style="zoom:50%;" />
+Für Mac bietet Microsoft zum Entwickeln Visual Studio für Mac an: <img src="images/vsmac_de.png" alt="vsmac_de%50" style="zoom:50%;" />
 
 (Screenshot https://visualstudio.microsoft.com/de/vs/mac/ - 04.09.2023)
 
@@ -17,7 +19,7 @@ Englischsprachige Nutzer haben jedoch einen Wissensvorsprung:
 
 Der Link führt auf [What's happening to Visual Studio for Mac?](https://learn.microsoft.com/en-us/visualstudio/mac/what-happened-to-vs-for-mac?view=vsmac-2022)
 
-Dort wird dann erklärt, dass Microsoft den Editor nicht mehr weiterentwickelt wird und nach dem 31.08.2024 auch nicht mehr verfügbar ist:
+Dort wird dann erklärt, dass Microsoft den Editor nicht mehr weiter entwickelt und dieser nach dem 31.08.2024 auch nicht mehr verfügbar ist:
 
 > **On or before Aug 31, 2024**
 >
@@ -31,7 +33,7 @@ Als Alternative wird auf [Visual Studio Code](https://code.visualstudio.com/docs
 
 ## VS Code & C# Dev Kit
 
-Der freie open source Editor VS Code von Microsoft ist meiner Meinung nach wirklich gut gelungen und wird von mir selbst auf dem mac seit Jahren als zentrale Entwicklungsumgebung genutzt.
+Der freie open source Editor VS Code von Microsoft ist meiner Meinung nach wirklich gut gelungen und wird von mir selbst auf dem Mac seit Jahren als zentrale Entwicklungsumgebung genutzt.
 
 Jedoch bin ich bisher nicht auf die Idee gekommen, diesen zur C#-Entwicklung zu nutzen, da die bisherigen Erweiterungen dafür eher schlecht als recht funktionieren.
 
@@ -72,7 +74,9 @@ Folgende Schritte sind Notwendig:
 
 ## Fazit
 
-Nach dem ersten Blick auf diese Kombination bin ich als langjähriger Nutzer von Visual Studio unter Windows beeindruckt: Codelense, Debugging, IntelliSense und Testing funktionieren. Einzig die UI ist nicht so überfrachtet wie die von Visual Studio (Windows), was aber gerade für den Anfang gar nicht so schlecht ist. Das Kontextmenü bzw die Command Palette übernehmen nun die Aufgabe zu allen relevanten Punkten.
+Nach dem ersten Blick auf diese Kombination bin ich als langjähriger Nutzer von Visual Studio unter Windows beeindruckt: IntelliSense, CodeLense, Debugging und Testing funktionieren. 
+
+Die UI ist nicht so überfrachtet wie die von Visual Studio unter Windows, was aber gerade für den Anfang gar nicht so schlecht ist. Das Kontextmenü bzw die Command Palette übernehmen nun die Aufgabe zu allen relevanten Punkten.
 
 Auf jeden Fall besser als Visual Studio für Mac, dem ich somit keine Träne nachweinen werde.
 
