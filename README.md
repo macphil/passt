@@ -92,10 +92,12 @@ generate new keypair:
 ```bash
 ssh-keygen -f ~/.ssh/<nickame>.ed25519 -t ed25519 -C <comment>
 ```
-copy public key to `known_host` at nickname:
+copy public key to `authorized_keys` at nickname:
 ```
 ssh-copy-id -i ~/.ssh/<nickame>.ed25519 user@fqdn.foo.bar.com
 ```
+
+if ssh-copy-id is not available, copy the content of the **`*.pub`** file into the `.ssh/authorized_keys` file at nickname 
 
 `.ssh/config`:
 ```txt
@@ -103,7 +105,7 @@ Host <nickame>
 HostName fqdn.foo.bar.com
 Port 123456
 User username
-IdentityFile  ~/.ssh/<nickame>.ed25519
+IdentityFile  ~/.ssh/<nickame>.ed25519lbb-vt01
 ```
 
 links: 
