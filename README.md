@@ -97,15 +97,24 @@ copy public key to `authorized_keys` at nickname:
 ssh-copy-id -i ~/.ssh/<nickame>.ed25519 user@fqdn.foo.bar.com
 ```
 
-if ssh-copy-id is not available, copy the content of the **`*.pub`** file into the `.ssh/authorized_keys` file at nickname 
+if ssh-copy-id is not available, copy the content of the **`*.pub`** file into the `.ssh/authorized_keys` file at nickname
+```powershell
+Get-Content ~/.ssh/<nickame>.ed25519.pub | clip
+```
+
+test connection:
+```bash
+ssh -t git@fqdn.foo.bar.com -p 3456 -i <nickname>.ed25519
+```
+ something like `shell request failed on channel 0` indicates success
 
 `.ssh/config`:
 ```txt
 Host <nickame>
 HostName fqdn.foo.bar.com
-Port 123456
+Port 3456
 User username
-IdentityFile  ~/.ssh/<nickame>.ed25519lbb-vt01
+IdentityFile  ~/.ssh/<nickame>.ed25519
 ```
 
 links: 
