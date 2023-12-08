@@ -116,9 +116,20 @@ Port 3456
 User username
 IdentityFile  ~/.ssh/<nickame>.ed25519
 ```
+> [!TIP]
+> If you want to use the same configuration section for multiple hosts, either insert them separated by spaces or use wildchars
+> ```txt
+> Host *
+>   User: Foo
+>   IdentityFile ~/.ssh/Foo.ed25519
+> ```
+
+> [!WARNING]
+> The configuration that fits first is taken. Therefore, caution is advised with wildcars
 
 links: 
 - <https://www.ssh.com/academy/ssh/keygen>
 - <https://www.ssh.com/academy/ssh/copy-id>
 - <https://www.ssh.com/academy/ssh/config#listing-of-client-configuration-options>
+- <https://linuxize.com/post/using-the-ssh-config-file/>
 
