@@ -219,11 +219,11 @@ prompt_hg() {
 prompt_dir() {
   currentDir=$(pwd)
   case "$currentDir" in
-    /Users/macphil/git/github*) currentDir="${currentDir/\/Users\/macphil\/git\/github/\uf7a3}" ;;
-    /Users/macphil/git*) currentDir="${currentDir/\/Users\/macphil\/git/\uf7a1}" ;;
+    /Users/macphil/git/github*) currentDir="${currentDir/\/Users\/macphil\/git\/github/\uf408}" ;;
+    /Users/macphil/git*) currentDir="${currentDir/\/Users\/macphil\/git/\uf1d3}" ;;
     *) currentDir="%~" ;;
   esac
-  prompt_segment blue $CURRENT_FG " $currentDir "
+  prompt_segment blue $CURRENT_FG "$currentDir"
 }
 
 # Virtualenv: current working virtualenv
@@ -247,17 +247,8 @@ prompt_status() {
   [[ -n "$symbols" ]] && prompt_segment black default "$symbols"
 }
 
-#AWS Profile:
-# - display current AWS_PROFILE name
-# - displays yellow on red if profile name contains 'production' or
-#   ends in '-prod'
-# - displays black on green otherwise
-prompt_aws() {
-  [[ -z "$AWS_PROFILE" || "$SHOW_AWS_PROMPT" = false ]] && return
-  case "$AWS_PROFILE" in
-    *-prod|*production*) prompt_segment red yellow  "AWS: ${AWS_PROFILE:gs/%/%%}" ;;
-    *) prompt_segment green black "AWS: ${AWS_PROFILE:gs/%/%%}" ;;
-  esac
+prompt_nf(){
+  prompt_segment blue black "-\u02a2-\u02a4-\u0ba0-\ue5fb-\ue5fd-\ue65b-\ue65c-\ue65d-\ue7021-\ue708-\ue709-\ue70a-\ue717-\ue725-\ue726-\ue727-\ue728-\ue729-\uea642-\uea84-\ueafc-\ueafd-\ueafe-\ueaff-\ueb00-\ueba1-\uebbc-\uebda-\uebdb3-\uf092-\uf09b-\uf113-\uf184-\uf1d2-\uf1d3-\uf296-\uf339-\uf407-\uf4084-\uf417-\uf418-\uf419-\uf470-\uf47f-\uf4db-\uf4dc-\uf4dd"
 }
 
 ## Main prompt
@@ -265,12 +256,12 @@ build_prompt() {
   RETVAL=$?
   prompt_status
   prompt_virtualenv
-  # prompt_aws
   prompt_context
   prompt_dir
   prompt_git
   prompt_bzr
   prompt_hg
+  # prompt_nf
   prompt_end
 }
 
