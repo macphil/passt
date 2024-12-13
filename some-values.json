@@ -1,0 +1,52 @@
+{
+  "values": [
+    {
+      "approvedAmount": 2000.0,
+      "currency": {
+        "localizedName": "EUR",
+        "numericValue": 978,
+        "value": "EUR"
+      },
+      "isTci": true,
+      "limitTypeIdentifier": {
+        "identifier": "tci-limit",
+        "localizedNames": [
+          {
+            "language": "de",
+            "localizedName": "WKV Limit (de)"
+          },
+          {
+            "language": "en",
+            "localizedName": "TCI limit (en)"
+          }
+        ]
+      },
+      "validFrom": "2018-10-25T00:00:00",
+      "validTo": "9999-12-31T23:59:59"
+    },
+    {
+      "approvedAmount": 7500.0,
+      "currency": {
+        "localizedName": "EUR",
+        "numericValue": 978,
+        "value": "EUR"
+      },
+      "isTci": false,
+      "limitTypeIdentifier": {
+        "identifier": "limit-proposal",
+        "localizedNames": [
+          {
+            "language": "de",
+            "localizedName": "Limit vorschlag (de)"
+          },
+          {
+            "language": "en",
+            "localizedName": "Limit proposal (en)"
+          }
+        ]
+      },
+      "validFrom": "2018-10-25T00:00:00",
+      "validTo": "9999-12-31T23:59:59"
+    }
+  ]
+}
