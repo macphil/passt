@@ -70,7 +70,6 @@ begin {
 }
 
 process {
-
     $gciParams = @{
         Path      = $RootDirectory.FullName
         Recurse   = $true
