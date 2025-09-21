@@ -87,6 +87,15 @@ Prefer installing it via `choco install <name>`
 
 - [TreeSize Free | JAM Software (jam-software.com)](https://www.jam-software.com/treesize_free)
 
+## git
+
+### config
+On Mac, many git commands display the output in a vim-like editor.
+The following configuration provides a workaround for this issue:
+```bash
+git config --global core.pager "less -X -F"
+```
+
 ## ssh & co
 generate new keypair:
 ```bash
