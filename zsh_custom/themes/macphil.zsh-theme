@@ -66,7 +66,7 @@ prompt_segment() {
   if [[ $CURRENT_BG != 'NONE' && $1 != $CURRENT_BG ]]; then
     echo -n " %{$bg%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR%{$fg%} "
   else
-    echo -n "%{$bg%}%{$fg%} "
+    echo -n "%{$bg%}%{$fg%}"
   fi
   CURRENT_BG=$1
   [[ -n $3 ]] && echo -n $3
@@ -247,10 +247,14 @@ prompt_status() {
   [[ -n "$symbols" ]] && prompt_segment black default "$symbols"
 }
 
+
 prompt_nf(){
   prompt_segment blue black "-\u02a2-\u02a4-\u0ba0-\ue5fb-\ue5fd-\ue65b-\ue65c-\ue65d-\ue7021-\ue708-\ue709-\ue70a-\ue717-\ue725-\ue726-\ue727-\ue728-\ue729-\uea642-\uea84-\ueafc-\ueafd-\ueafe-\ueaff-\ueb00-\ueba1-\uebbc-\uebda-\uebdb3-\uf092-\uf09b-\uf113-\uf184-\uf1d2-\uf1d3-\uf296-\uf339-\uf407-\uf4084-\uf417-\uf418-\uf419-\uf470-\uf47f-\uf4db-\uf4dc-\uf4dd"
 }
 
+prompt_time(){
+  echo "%D{%H:%M:%S}"
+}
 ## Main prompt
 build_prompt() {
   RETVAL=$?
@@ -265,5 +269,8 @@ build_prompt() {
   prompt_end
 }
 
+build_rprompt() {
+  prompt_time
+}
 PROMPT='%{%f%b%k%}$(build_prompt)
-❯ '
+$(prompt_time) ❯ '
